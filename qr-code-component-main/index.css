@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:hsl(212, 45%, 89%);
+}
+
+.box{
+    padding: 15px;
+    width: 20%;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+}
+.title{
+    color: hsl(218, 44%, 22%);
+    margin: 10 px;
+}
