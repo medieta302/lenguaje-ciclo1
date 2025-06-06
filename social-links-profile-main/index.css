@@ -1,0 +1,59 @@
+body {
+    background-color: #13180a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background-color: #403535d0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #d20af1e5;
+    width: 300px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.location {
+    color: #13c5e9;
+}
+
+.description {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.github {
+    background-color: #11ee01;
+}
+
+.link:hover {
+    background-color: #5f8708;
+}
