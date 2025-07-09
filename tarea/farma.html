@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Salud mia</title>
+    <link rel="stylesheet" href="./farma.css">
+</head>
+<body>
+    <header>
+        <h1>Farmacia salud mia</h1>
+        <p>Tu salud, nuestra prioridad</p>
+        <div class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto-grid">
+                <div class="producto" data-id="ampolla" data-precio="5.00">
+                    <h2>Ampolla</h2>
+                    <img src="./imagen2.jpg" alt="Ampolla">
+                    <p class="precio">S/ 5.00</p>
+                    <p>Alivia dolores y reduce fiebre.</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="capsula" data-precio="7.50">
+                    <h2>Cápsula</h2>
+                    <img src="./imagen3.jpeg" alt="Cápsula">
+                    <p class="precio">S/ 7.50</p>
+                    <p><strong>Oferta:</strong> 2x1 hasta el 15 de julio</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="producto" data-id="vitamina" data-precio="10.00">
+                    <h2>Vitamina</h2>
+                    <img src="./imagen4.jpg" alt="Vitamina">
+                    <p class="precio">S/ 10.00</p>
+                    <p>Refuerza tu sistema inmunológico.</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Tu Carrito de Compras</h2>
+            <div id="cart-items">
+                <p class="empty-cart-message">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">S/ 0.00</span></p>
+                <button id="checkout-button">Proceder al Pago</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: +51 999 888 777 | ventas@saludplus.com</p>
+    </footer>
+    
+</html>
