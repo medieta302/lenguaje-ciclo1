@@ -1,0 +1,245 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para posicionar el icono del carrito */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Estilos del icono del carrito en el encabezado */
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#cart-count {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 0px 8px;
+    font-size: 0.6em;
+    margin-left: 5px;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+/* Estilos para la sección de productos */
+.productos {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.productos h2, .cart-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.producto-grid {
+    display: grid; /* Usamos CSS Grid para un diseño más flexible */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre los productos */
+    justify-content: center; /* Centra los productos en la cuadrícula */
+}
+
+/* Estilos para cada tarjeta de producto individual */
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto h2 {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.producto img {
+    max-width: 100%;
+    height: 180px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.producto .precio {
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    min-height: 45px; /* Para mantener la altura consistente */
+}
+
+.producto strong {
+    color: #dc3545;
+}
+
+/* Estilos para los botones */
+.add-to-cart, #checkout-button {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover, #checkout-button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+#checkout-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+/* Estilos para la sección del carrito de compras */
+.cart-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#cart-items {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.empty-cart-message {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Estilos para cada ítem en el carrito (será generado por JS) */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-item-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-controls button {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-controls button:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+}
+
+.cart-item-controls span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-summary {
+    border-top: 2px solid #007bff;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.cart-summary span {
+    color: #28a745;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
